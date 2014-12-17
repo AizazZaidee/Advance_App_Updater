@@ -20,6 +20,20 @@ Update your App without any Play Store.
 
 See [MainActivity.java](https://github.com/AizazAZ/Advance_App_Updater/blob/master/app/src/main/java/com/az/advance/app/updater/MainActivity.java) for more detail.
 
+You also need to register a `BroadCastReceiver` in your `AndroidManifest.xml`
+
+    <receiver
+       android:name=".UpdateNotificationReceiver"
+       android:enabled="true"
+       android:exported="false" >
+          <intent-filter>
+              <action android:name="com.az.advance.app.updater.DOWNLOAD_CANCELLED" />
+              <action android:name="com.az.advance.app.updater.NOTIFICATION_REMOVED" />
+              <action android:name="com.az.advance.app.updater.INSTALL_UPDATE" />
+              <action android:name="com.az.advance.app.updater.UPDATE_DOWNLOADED" />
+         </intent-filter>
+    </receiver>
+
 > - **Required Json** 
 > { "updateURL" : "http://www.path-to-apk/app.apk",
   "versionCode" : "1"
