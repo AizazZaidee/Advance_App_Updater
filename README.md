@@ -18,6 +18,8 @@ Update your App without any Play Store.
                         }
                     });
 
+See [MainActivity.java](https://github.com/AizazAZ/Advance_App_Updater/blob/master/app/src/main/java/com/az/advance/app/updater/MainActivity.java) for more detail.
+
 > - **Required Json** 
 > { "updateURL" : "http://www.path-to-apk/app.apk",
   "versionCode" : "1"
