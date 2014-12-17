@@ -19,7 +19,7 @@ public class MainActivity extends ActionBarActivity {
         tv.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-                UpdateCheck.getInstance().checkForUpdate(getApplicationContext(),"http://qfangez.qfang.com/GetVersion",true,new UpdateCheck.UpdateCheckCallback() {
+                UpdateCheck.getInstance().checkForUpdate(getApplicationContext(),"http://YourServer",true,new UpdateCheck.UpdateCheckCallback() {
                     @Override
                     public void noUpdateAvailable() {
                     System.out.println("No Update Available");
