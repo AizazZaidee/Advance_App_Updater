@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Advance_App_Updater</string>
+    <string name="cancel">cancel</string>
+    <string name="stop">stop</string>
+    <string name="download_update">Update is available, Tap to start downloading</string>
+    <string name="downloading_update">Your update is being downloaded</string>
+    <string name="install_update">Tap to install the update!</string>
+    <string name="error_network">Network Error</string>
+    <string name="error">Connection timed out, please try again later</string>
+    <string name="update_failure">Cannot find update file on Server</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Check for update</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
